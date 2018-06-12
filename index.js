@@ -1,11 +1,11 @@
 
 function sendRequest(state){
-
+	console.log("request komt er aan");
 	var http = new XMLHttpRequest();
-	http.open("PUT", "http://192.168.0.141/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
+	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
 	http.onreadystatechange = function() {
 		if(http.readyState == 4 && http.status == 200){
-			alert(http.responseText);
+			//alert(http.responseText);
 		}
 	}
 	if(state == 1){
@@ -19,6 +19,7 @@ function sendRequest(state){
 var aanknop = document.getElementById("aanknop");
 var uitknop = document.getElementById("uitknop");
 aanknop.addEventListener("click", function(){
+	console.log("request");
  sendRequest(1);
 });
 uitknop.addEventListener("click", function(){
