@@ -1,7 +1,8 @@
+
 function sendRequest(state){
 
 	var http = new XMLHttpRequest();
-	http.open("PUT", "http://http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
+	http.open("PUT", "http://192.168.0.141/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
 	http.onreadystatechange = function() {
 		if(http.readyState == 4 && http.status == 200){
 			alert(http.responseText);
