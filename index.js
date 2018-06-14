@@ -1,4 +1,22 @@
 
+var rood = document.getElementById("rood")
+var blauw = document.getElementById("blauw")
+rood.addEventListener("click", veranderRood);
+blauw.addEventListener("click", veranderBlauw);
+
+function veranderRood(){
+http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
+	if (state == 0)
+		http.send('{"hue": 123}')
+}
+
+function veranderBlauw(){
+http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
+	if (state == 1)
+		http.send('{"hue": 40000}')
+}
+
+
 function sendRequest(state){
 	console.log("request komt er aan");
 	var http = new XMLHttpRequest();
@@ -8,10 +26,10 @@ function sendRequest(state){
 			//alert(http.responseText);
 		}
 	}
-	if(state == 1){
+	if(state == 2){
 		http.send('{"on": true}');
 	}
-	if(state == 0){
+	if(state == 3){
 		http.send('{"on": false}');
 	}
 }
