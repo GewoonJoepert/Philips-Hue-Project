@@ -5,12 +5,14 @@ rood.addEventListener("click", veranderRood);
 blauw.addEventListener("click", veranderBlauw);
 
 function veranderRood(){
+	var http = new XMLHttpRequest();
 http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
 	if (state == 0)
 		http.send('{"hue": 123}')
 }
 
 function veranderBlauw(){
+		var http = new XMLHttpRequest();
 http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
 	if (state == 1)
 		http.send('{"hue": 40000}')
