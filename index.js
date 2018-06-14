@@ -1,8 +1,8 @@
 
 var rood = document.getElementById("rood")
-var blauw = document.getElementById("blauw")
+var groen = document.getElementById("groen")
 rood.addEventListener("click", veranderRood);
-blauw.addEventListener("click", veranderBlauw);
+groen.addEventListener("click", veranderGroen);
 
 function veranderRood(){
 	var http = new XMLHttpRequest();
@@ -10,10 +10,10 @@ http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWt
 		http.send('{"hue": 123}')
 }
 
-function veranderBlauw(){
+function veranderGroen(){
 	var http = new XMLHttpRequest();
 	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
-	http.send('{"hue": 40000}')
+	http.send('{"hue": 30000}')
 	}
 
 
