@@ -1,8 +1,10 @@
 
 var rood = document.getElementById("rood")
 var groen = document.getElementById("groen")
+var oranje = document.getElementById("oranje")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
+oranje.addEventListener("click", veranderOranje)
 
 function veranderRood(){
 	var http = new XMLHttpRequest();
@@ -16,6 +18,11 @@ function veranderGroen(){
 	http.send('{"hue": 30000}')
 	}
 
+function veranderOranje(){
+	var http = new XMLHttpRequest();
+	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
+	http.send('{"hue": 7000}')
+}
 
 function sendRequest(state){
 	console.log("request komt er aan");
