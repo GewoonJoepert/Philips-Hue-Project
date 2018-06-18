@@ -18,3 +18,49 @@ button {
 #groen {
   background-color: green; /*groen*/
 }
+#aanknop {
+  border: 5px;
+}
+
+#gewicht {
+  background-color: #437ad3; /* blauw */
+  border: 5px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+#gerbootejaartal {
+  background-color: #7fff3f; /* groen */
+  border: 5px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+#lengte {
+  background-color: #7fff3f; /* groen */
+  border: 5px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+#Genereer {
+  background-color: #7fff3f; /* groen */
+  border: 5px;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
