@@ -23,7 +23,7 @@ button {
 }
 
 #gewicht {
-  background-color: #437ad3; /* blauw */
+  background-color: #83e851; /* groen */
   border: 5px;
   color: white;
   padding: 10px 32px;
@@ -34,7 +34,7 @@ button {
 
 }
 #gerbootejaartal {
-  background-color: #7fff3f; /* groen */
+  background-color: #83e851; /* groen */
   border: 5px;
   color: white;
   padding: 10px 32px;
@@ -45,7 +45,7 @@ button {
 
 }
 #lengte {
-  background-color: #7fff3f; /* groen */
+  background-color: #83e851; /* groen */
   border: 5px;
   color: white;
   padding: 10px 32px;
@@ -56,7 +56,7 @@ button {
 
 }
 #Genereer {
-  background-color: #7fff3f; /* groen */
+  background-color: #437ad3; /* blauw */
   border: 5px;
   color: white;
   padding: 10px 32px;
