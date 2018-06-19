@@ -2,9 +2,19 @@ var lampen = [1, 2, 3, 4, 5]
 var rood = document.getElementById("rood")
 var groen = document.getElementById("groen")
 var oranje = document.getElementById("oranje")
+var genereer = document.getElementById("genereer")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
+<<<<<<< HEAD
+oranje.addEventListener("click", veranderOranje);
+genereer.addEventListener("click", rekenUit);
+
+function rekenUit(){
+
+}
+=======
 oranje.addEventListener("click", veranderOranje)
+>>>>>>> 965bb1f9cebe6b4338253776323982feeab8573f
 
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
@@ -33,7 +43,16 @@ function sendRequest(lamp, body){
 	}
 	http.send(body);
 }
+<<<<<<< HEAD
+var inputs = document.getElementsByClassName("input");
+console.log(inputs[0]);
+
+// var persoonlijkeinformatie = document.getElementsByClassName("input");
+// alert(.value);
+// 	console.log("info is opgeslagen");
+=======
 
 var persoonlijkeinformatie = document.getElementById("info");
 alert(document.getElementsByClassName("input")[x].value);
 	console.log("info is opgeslagen");
+>>>>>>> 965bb1f9cebe6b4338253776323982feeab8573f
