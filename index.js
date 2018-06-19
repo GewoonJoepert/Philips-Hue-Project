@@ -28,7 +28,6 @@ function sendRequest(lamp, body){
 	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/" + lamp + "/state");
 	http.onreadystatechange = function() {
 		if(http.readyState == 4 && http.status == 200){
-			//alert(http.responseText);
 		}
 	}
 	http.send(body);
