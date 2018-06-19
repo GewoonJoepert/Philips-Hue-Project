@@ -35,8 +35,6 @@ function sendRequest(lamp, body){
 	}
 	http.send(body);
 }
-
-
 var persoonlijkeinformatie = document.getElementById("input").index.html;
 alert(document.getElementsByClassName("input")[x].value);
 	console.log("info is opgeslagen");
