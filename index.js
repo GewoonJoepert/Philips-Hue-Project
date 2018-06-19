@@ -43,3 +43,7 @@ aanknop.addEventListener("click", function(){
 uitknop.addEventListener("click", function(){
  sendRequest(0);
 });
+
+var persoonlijkeinformatie = document.getElementById("input").index.html;
+alert(document.getElementsByClassName("input")[x].value);
+	console.log("info is opgeslagen");
