@@ -1,4 +1,4 @@
-
+var lampen = [1, 2, 3, 4, 5]
 var rood = document.getElementById("rood")
 var groen = document.getElementById("groen")
 var oranje = document.getElementById("oranje")
@@ -8,8 +8,10 @@ oranje.addEventListener("click", veranderOranje)
 
 function veranderRood(){
 	var http = new XMLHttpRequest();
-http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
-		http.send('{"hue": 123}')
+for (var i = 0; i < lampen.length; i++) {
+	sendRequest(lampen[i], 0);
+	console.log
+	}
 }
 
 function veranderGroen(){
@@ -37,7 +39,7 @@ function sendRequest(state){
 		http.send('{"on": true}');
 	}
 	if(state == 0){
-		http.send('{"on": false}');
+		http.send('{"hue": 123}');
 	}
 }
 
