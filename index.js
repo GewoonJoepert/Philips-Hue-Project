@@ -6,6 +6,8 @@ rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
 oranje.addEventListener("click", veranderOranje);
 
+
+
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
 		sendRequest(lampen[i],'{"hue": 0, "bri": 120	}');
@@ -34,15 +36,6 @@ function sendRequest(lamp, body){
 	http.send(body);
 }
 
-var aanknop = document.getElementById("aanknop");
-var uitknop = document.getElementById("uitknop");
-aanknop.addEventListener("click", function(){
-	console.log("request");
- sendRequest(1);
-});
-uitknop.addEventListener("click", function(){
- sendRequest(0);
-});
 
 var persoonlijkeinformatie = document.getElementById("input").index.html;
 alert(document.getElementsByClassName("input")[x].value);
