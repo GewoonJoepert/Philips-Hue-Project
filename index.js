@@ -34,16 +34,6 @@ function sendRequest(lamp, body){
 	http.send(body);
 }
 
-var aanknop = document.getElementById("aanknop");
-var uitknop = document.getElementById("uitknop");
-aanknop.addEventListener("click", function(){
-	console.log("request");
- sendRequest(1);
-});
-uitknop.addEventListener("click", function(){
- sendRequest(0);
-});
-
 var persoonlijkeinformatie = document.getElementById("input").index.html;
 alert(document.getElementsByClassName("input")[x].value);
 	console.log("info is opgeslagen");
