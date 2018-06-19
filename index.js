@@ -44,3 +44,12 @@ console.log(inputs[0]);
 // var persoonlijkeinformatie = document.getElementsByClassName("input");
 // alert(.value);
 // 	console.log("info is opgeslagen");
+<<<<<<< HEAD
+=======
+
+var persoonlijkeinformatie = document.getElementById("info");
+alert(document.getElementsByClassName("input")[x].value);
+	console.log("info is opgeslagen");
+>>>>>>> 965bb1f9cebe6b4338253776323982feeab8573f
+=======
+>>>>>>> d28b51ccae704fc1a37ef27dc91bd5fd028128eb
