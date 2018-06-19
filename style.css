@@ -56,11 +56,12 @@ button {
 
 }
 #Genereer {
-  background-color: #437ad3; /* blauw */
+  background-color: orange; /* oranje */
   border: 5px;
   color: white;
   padding: 10px 32px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  
 }
