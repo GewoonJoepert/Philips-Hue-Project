@@ -2,11 +2,15 @@ var lampen = [1, 2, 3, 4, 5]
 var rood = document.getElementById("rood")
 var groen = document.getElementById("groen")
 var oranje = document.getElementById("oranje")
+var genereer = document.getElementById("genereer")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
 oranje.addEventListener("click", veranderOranje);
+genereer.addEventListener("click", rekenUit);
 
+function rekenUit(){
 
+}
 
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
@@ -35,6 +39,9 @@ function sendRequest(lamp, body){
 	}
 	http.send(body);
 }
-var persoonlijkeinformatie = document.getElementById("input").index.html;
-alert(document.getElementsByClassName("input")[x].value);
-	console.log("info is opgeslagen");
+var inputs = document.getElementsByClassName("input");
+console.log(inputs[0]);
+
+// var persoonlijkeinformatie = document.getElementsByClassName("input");
+// alert(.value);
+// 	console.log("info is opgeslagen");
