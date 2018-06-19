@@ -4,7 +4,7 @@ var groen = document.getElementById("groen")
 var oranje = document.getElementById("oranje")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
-oranje.addEventListener("click", veranderOranje)
+oranje.addEventListener("click", veranderOranje);
 
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
