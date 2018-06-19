@@ -7,40 +7,31 @@ groen.addEventListener("click", veranderGroen);
 oranje.addEventListener("click", veranderOranje)
 
 function veranderRood(){
-	var http = new XMLHttpRequest();
-for (var i = 0; i < lampen.length; i++) {
-	sendRequest(lampen[i], 0);
-	console.log
+	for (var i = 0; i < lampen.length; i++) {
+		sendRequest(lampen[i],'{"hue": 0, "bri": 120	}');
 	}
 }
 
 function veranderGroen(){
-	var http = new XMLHttpRequest();
-	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
-	http.send('{"hue": 30000}')
+	for (var i = 0; i < lampen.length; i++) {
+		sendRequest(lampen[i],'{"hue": 30000, "bri": 120	}');
 	}
-
-function veranderOranje(){
-	var http = new XMLHttpRequest();
-	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
-	http.send('{"hue": 7000}')
 }
-
-function sendRequest(state){
+function veranderOranje(){
+	for (var i = 0; i < lampen.length; i++) {
+		sendRequest(lampen[i],'{"hue": 7000, "bri": 120	}');
+	}
+}
+function sendRequest(lamp, body){
 	console.log("request komt er aan");
 	var http = new XMLHttpRequest();
-	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/1/state");
+	http.open("PUT", "http://192.168.178.172/api/l1SJ36Y-mE6pM48fRULsOjfFIv2tyV68AWtcXNjB/lights/" + lamp + "/state");
 	http.onreadystatechange = function() {
 		if(http.readyState == 4 && http.status == 200){
 			//alert(http.responseText);
 		}
 	}
-	if(state == 1){
-		http.send('{"on": true}');
-	}
-	if(state == 0){
-		http.send('{"hue": 123}');
-	}
+	http.send(body);
 }
 
 var aanknop = document.getElementById("aanknop");
