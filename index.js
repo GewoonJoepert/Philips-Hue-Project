@@ -8,18 +8,18 @@ oranje.addEventListener("click", veranderOranje)
 
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
-		sendRequest(lampen[i],'{"hue": 0, "bri": 120	}');
+		sendRequest(lampen[i],'{"hue": 0, "bri": 80	}');
 	}
 }
 
 function veranderGroen(){
 	for (var i = 0; i < lampen.length; i++) {
-		sendRequest(lampen[i],'{"hue": 30000, "bri": 120	}');
+		sendRequest(lampen[i],'{"hue": 30000, "bri": 80	}');
 	}
 }
 function veranderOranje(){
 	for (var i = 0; i < lampen.length; i++) {
-		sendRequest(lampen[i],'{"hue": 7000, "bri": 120	}');
+		sendRequest(lampen[i],'{"hue": 7000, "bri": 80	}');
 	}
 }
 function sendRequest(lamp, body){
