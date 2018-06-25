@@ -2,14 +2,9 @@ var lampen = [1, 2, 3, 4, 5]
 var rood = document.getElementById("rood")
 var groen = document.getElementById("groen")
 var oranje = document.getElementById("oranje")
-var gewicht = document.getElementById("gewicht")
-var lengte = document.getElementById("lengte")
-var leeftijd = document.getElementById("gerbootejaartal")
-var genereer = document.getElementById("genereer")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
-oranje.addEventListener("click", veranderOranje);
-genereer.addEventListener("click", berekenBMI);
+oranje.addEventListener("click", veranderOranje)
 
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
@@ -24,7 +19,7 @@ function veranderGroen(){
 }
 function veranderOranje(){
 	for (var i = 0; i < lampen.length; i++) {
-		sendRequest(lampen[i],'{"hue": 7	000, "bri": 80	}');
+		sendRequest(lampen[i],'{"hue": 7000, "bri": 80	}');
 	}
 }
 function sendRequest(lamp, body){
@@ -43,12 +38,10 @@ alert(document.getElementsByClassName("input")[x].value);
 	console.log("info is opgeslagen");
 
 
-function berekenBMI(){
-	console.log("request");
-gewicht.value;
-lengte.value;
-leeftijd.value;
-bmi = gewicht / (lengte*lengte);
-	if (bmi < 18):
-		se
-}
+lengte
+gewicht
+
+bmi = gewicht / (lengte*lengte)
+
+if (bmi < 18):
+	se
