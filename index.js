@@ -38,15 +38,13 @@ function sendRequest(lamp, body){
 	http.send(body);
 }
 
-// var persoonlijkeinformatie = document.getElementById("info");
-// alert(document.getElementsByClassName("input")[x].value);
-// 	console.log("info is opgeslagen");
+var persoonlijkeinformatie = document.getElementById("info");
+alert(document.getElementsByClassName("input")[x].value);
+console.log("info is opgeslagen");
 
-
-//function berekenBMI(){
-// 	console.log("request");
-// gewicht.value;
-// lengte.value;
-// leeftijd.value;
-// //	if (bmi < 18)
-// //		se
+function berekenBMI(){
+console.log("request");
+gewicht.value;
+lengte.value;
+leeftijd.value;
+gewicht / (lengte x lengte) = uitkomst
