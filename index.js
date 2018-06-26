@@ -4,7 +4,6 @@ var groen = document.getElementById("groen")
 var oranje = document.getElementById("oranje")
 var gewicht = document.getElementById("gewicht")
 var lengte = document.getElementById("lengte")
-var leeftijd = document.getElementById("gerbootejaartal")
 var genereer = document.getElementById("genereer")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
