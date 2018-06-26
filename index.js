@@ -38,9 +38,9 @@ function sendRequest(lamp, body){
 }
 
 function berekenBMI(){
-	console.log("request");
-	gewicht = gewicht.value;
-	lengte = lengte.value;
- 	bmi = gewicht / (lengte * lengte);
-	console.log(bmi);
+console.log("request");
+gewicht = gewicht.value;
+lengte = lengte.value;
+bmi = gewicht / (lengte * lengte);
+console.log(bmi);
 }
