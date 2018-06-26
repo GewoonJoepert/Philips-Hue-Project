@@ -9,7 +9,7 @@ var genereer = document.getElementById("genereer")
 rood.addEventListener("click", veranderRood);
 groen.addEventListener("click", veranderGroen);
 oranje.addEventListener("click", veranderOranje);
-//genereer.addEventListener("click", berekenBMI);
+genereer.addEventListener("click", berekenBMI);
 
 function veranderRood(){
 	for (var i = 0; i < lampen.length; i++) {
