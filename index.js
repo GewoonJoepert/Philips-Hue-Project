@@ -37,13 +37,10 @@ function sendRequest(lamp, body){
 	http.send(body);
 }
 
-var persoonlijkeinformatie = document.getElementById("info");
-alert(document.getElementsByClassName("input")[x].value);
-console.log("info is opgeslagen");
-
 function berekenBMI(){
-console.log("request");
-gewicht.value;
-lengte.value;
-leeftijd.value;
-gewicht / (lengte x lengte) = uitkomst
+	console.log("request");
+	gewicht = gewicht.value;
+	lengte = lengte.value;
+ 	bmi = gewicht / (lengte * lengte);
+	console.log(bmi);
+}
