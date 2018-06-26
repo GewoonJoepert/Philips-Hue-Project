@@ -24,7 +24,7 @@ function veranderGroen(){
 }
 function veranderOranje(){
 	for (var i = 0; i < lampen.length; i++) {
-		sendRequest(lampen[i],'{"hue": 7	000, "bri": 80	}');
+		sendRequest(lampen[i],'{"hue": 7000, "bri": 80	}');
 	}
 }
 function sendRequest(lamp, body){
