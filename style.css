@@ -22,7 +22,7 @@ button {
   border: 5px;
 }
 
-#gewicht {
+#gewichtLabel {
   background-color: #83e851; /* groen */
   border: 5px;
   color: white;
@@ -44,7 +44,7 @@ button {
   font-size: 16px;
 
 }
-#lengte {
+#lengtelabel {
   background-color: #83e851; /* groen */
   border: 5px;
   color: white;
