@@ -43,11 +43,20 @@ function berekenBMI(){
 	console.log(bmi);
 
 	if (bmi < 18.5){
+		 	for (var i = 0; i < lampen.length; i++) {
+			sendRequest(lampen[i],'{"hue": 7000, "bri": 80	}');
+		}
 		alert ("je hebt ondergewicht!, eet meer chocola :)");
 
- }	else if (bmi > 18.5 && bmi < 25.0)
+  }	else if (bmi > 18.5 && bmi < 25.0){
+			for (var i = 0; i < lampen.length; i++) {
+			sendRequest(lampen[i],'{"hue": 30000, "bri": 80, "on": true	}');
+		}
 			alert ("je hebt het goeie gewicht, ga zo door!");
-else {
+	} else {
+			for (var i = 0; i < lampen.length; i++) {
+			sendRequest(lampen[i],'{"hue": 0, "bri": 80, "on": true	}');
+		}
 		alert ("je heb overgewicht, ga meer sporten");
-}
+	}
 }
