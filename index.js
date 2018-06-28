@@ -5,9 +5,9 @@ var oranje = document.getElementById("oranje")
 var gewicht = document.getElementById("gewicht")
 var lengte = document.getElementById("lengte")
 var genereer = document.getElementById("genereer")
-rood.addEventListener("click", veranderRood);
-groen.addEventListener("click", veranderGroen);
-oranje.addEventListener("click", veranderOranje);
+//rood.addEventListener("click", veranderRood);
+//groen.addEventListener("click", veranderGroen);
+//oranje.addEventListener("click", veranderOranje);
 genereer.addEventListener("click", berekenBMI);
 
 // function veranderRood(){
@@ -15,7 +15,7 @@ genereer.addEventListener("click", berekenBMI);
 // 		sendRequest(lampen[i],'{"hue": 0, "bri": 80	}');
 // 	}
 // }
-// 
+//
 // function veranderGroen(){
 // 	for (var i = 0; i < lampen.length; i++) {
 // 		sendRequest(lampen[i],'{"hue": 30000, "bri": 80	}');
