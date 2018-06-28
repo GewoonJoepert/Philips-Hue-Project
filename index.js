@@ -46,7 +46,7 @@ function berekenBMI(){
 		alert ("je hebt ondergewicht!, eet meer chocola :)");
 
  }	else if (bmi > 18.5 && bmi < 25.0)
-			alert ("je hebt het goeie gewicht ga zo door!");
+			alert ("je hebt het goeie gewicht, ga zo door!");
 else {
 		alert ("je heb overgewicht, ga meer sporten");
 }
