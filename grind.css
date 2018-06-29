@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +9,7 @@ body {
 
 .header {
   grid-area: header;
-  background-color: #f1f1f1;
+  background-color: #f8ffdd;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -18,7 +19,7 @@ body {
   display: grid;
   grid-template-areas:
   'header header header header header header'
-  'left left middle middle right right'
+  'left left left right right right'
   'footer footer footer footer footer footer';
 }
 

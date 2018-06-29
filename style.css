@@ -55,11 +55,21 @@ button {
   font-size: 16px;
 
 }
-#Genereer {
+#genereer {
   background-color: #437ad3; /* blauw */
   border: 5px;
   color: white;
-  padding: 10px 32px;
+  padding: 30px 400px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#makers{
+  background-color: red;
+  border: 5px;
+  color: white;
+  padding: 10px 350px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
