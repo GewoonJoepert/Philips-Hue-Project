@@ -39,7 +39,7 @@ function berekenBMI(){
 	} else {
 		alert ("je hebt niks ingevult. Vul alsjeblieft iets in")
 		for (var i = 0; i < lampen.length; i++) {
-			sendRequest(lampen[i],'{"on": true	}');
+			sendRequest(lampen[i],'{"on": false}');
 		}
 	}
 }
