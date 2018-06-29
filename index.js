@@ -38,5 +38,8 @@ function berekenBMI(){
 			alert ("je hebt overgewicht! Ga wat meer sporten");
 	} else {
 		alert ("je hebt niks ingevult. Vul alsjeblieft iets in")
+		for (var i = 0; i < lampen.length; i++) {
+			sendRequest(lampen[i],'{"on": true	}');
+		}
 	}
 }
