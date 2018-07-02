@@ -9,7 +9,7 @@ body {
 
 .header {
   grid-area: header;
-  background-color: #f8ffdd;
+  background-color: #f1f1f1;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -28,6 +28,7 @@ body {
 .right {
   padding: 10px;
   height: 300px;
+  border: 2px solid white;
 }
 
 .left {
