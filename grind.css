@@ -28,7 +28,7 @@ body {
 .right {
   padding: 10px;
   height: 300px;
-  border: 2px solid white;
+  border: 5px solid white;
 }
 
 .left {
@@ -41,6 +41,7 @@ body {
 
 .right {
   grid-area: right;
+  border-left: none;
 }
 
 .footer {
