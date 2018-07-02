@@ -24,7 +24,7 @@ function berekenBMI(){
 		 	for (var i = 0; i < lampen.length; i++) {
 			sendRequest(lampen[i],'{"hue": 7000, "bri": 80	}');
 		}
-		alert ("je hebt ondergewicht!, eet meer chocola :)");
+		alert ("je hebt ondergewicht!, eet meer chocola. :)");
 
   }	else if (bmi > 18.5 && bmi < 25.0){
 			for (var i = 0; i < lampen.length; i++) {
@@ -35,9 +35,9 @@ function berekenBMI(){
 			for (var i = 0; i < lampen.length; i++) {
 				sendRequest(lampen[i],'{"hue": 0, "bri": 80, "on": true	}');
 			}
-			alert ("je hebt overgewicht! Ga wat meer sporten");
+			alert ("je hebt overgewicht! Ga wat meer sporten.");
 	} else {
-		alert ("je hebt niks ingevult. Vul alsjeblieft iets in")
+		alert ("je hebt niks ingevult, Vul alsjeblieft iets in.")
 		for (var i = 0; i < lampen.length; i++) {
 			sendRequest(lampen[i],'{"on": false}');
 		}
