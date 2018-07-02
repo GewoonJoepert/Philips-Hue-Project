@@ -9,18 +9,6 @@ button {
     font-size: 16px;
 }
 
-#rood {
-  background-color: red; /*rood*/
-}
-#oranje {
-  background-color: orange; /*oranje*/
-}
-#groen {
-  background-color: green; /*groen*/
-}
-#aanknop {
-  border: 5px;
-}
 
 #gewichtLabel {
   background-color: #437ad3; /* groen */
@@ -48,7 +36,7 @@ button {
   background-color: #437ad3; /* groen */
   border: 5px;
   color: white;
-  padding: 10px 32px;
+  padding: 10px 36.5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -73,4 +61,8 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+right{
+  
 }
